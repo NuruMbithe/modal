@@ -1,0 +1,196 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Dosis&family=Josefin+Sans&family=Merriweather:wght@300&family=Playfair+Display&family=Poppins:wght@300&display=swap');
+
+
+/* Global Styles */
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  background: var(--clr-grey-10);
+  color: var(--clr-grey-1);
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+
+.logo-1{
+  font-family: 'Dancing Script',sans-serif;
+  color:black;
+}
+
+.logo-2{
+  font-family: 'Dancing Script',sans-serif;
+  color: #e7630a;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+  color: black;
+  
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+p {
+  margin-bottom: 1.25rem;
+  color: var(--clr-grey-5);
+}
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+
+
+/*-----Button-----*/
+.btn,
+input[type=submit] {
+display: inline-block;
+padding: 10px 30px;
+font-weight: 300;
+border-radius: 4px;
+ -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+transition: background-color 0.2s, border 0.2s, color 0.2s;
+background: #e7630a;
+border: 2px solid #e7630a;
+color: black; 
+font-size: 90%;
+margin-right: 20px;
+text-decoration: none;
+}
+
+.btn:hover,
+input[type=submit]:hover{
+background-color: transparent;
+color:black ;
+transition: 0.3s;
+}
+
+
+/* Modal */
+.hero {
+  min-height: 100vh;
+  background: url('https://i.postimg.cc/rFX1KLGt/Header-Pic.jpg') center/cover no-repeat;
+  
+  
+  display: grid;
+  place-items: center;
+}
+.banner {
+  background: white;
+  padding: 4rem 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 90vw;
+  max-width: 620px;
+}
+
+.modal-btn{
+  margin-top: 2rem;
+  background:  #e7630a;
+  border-color:  #e7630a;
+  color: black;
+}
+.modal-btn:hover {
+  background: transparent;
+  color:black;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:rgba(127, 65, 34, 0.5) ;
+  display: grid;
+  place-items: center;
+  transition: all 0.3s linear;
+  visibility: hidden;
+  z-index: -10;
+}
+
+/* Open/Close Modal */
+.open-modal {
+  visibility: visible;
+  z-index: 10;
+}
+
+.modal-container {
+  background: white;
+  border-radius: 0.5rem;
+  width: 90vw;
+  height: 40vh;
+  max-width: 620px;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  position: relative;
+ 
+}
+
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  background: transparent;
+  border-color: transparent;
+  color: #e7630a;
+  cursor: pointer;
+  transition: all 0.3 linear;
+}
+.close-btn:hover {
+  color: #fba369;
+  transform: scale(1.3);
+}
+
+/* Form */
+input[type=email] {
+  width: 50%;
+padding: 7px;
+border-radius: 3px;
+border: 2.0px solid #f5d6d3;
+margin-top: 10px;
+font-size: 0.95em;
+}
